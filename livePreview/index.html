@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algoritmo Validador de cpf</title>
+  </head>
+  <style>
+    form {
+      display: flex;
+      justify-content: center;
+      flex-flow: column nowrap;
+      width: 60%;
+      margin: 0 auto;
+      border: 1px dashed black;
+      padding: 2rem;
+      gap: 0.5rem;
+    }
+    form input {
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+    }
+    form input[type="submit"] {
+      background-color: rgb(102, 240, 84);
+    }
+    form input[type="submit"]:hover {
+      cursor: pointer;
+      background-color: rgb(44, 219, 21);
+    }
+  </style>
+  <body>
+    <form id="form" action="#">
+      <label for="entrada">Digite o seu cpf aqui:</label>
+      <input id="entrada" type="text" placeholder="cpf..." />
+
+      <input type="submit" value="Validar CPF" />
+      <span>Resposta virá aqui</span>
+      <span></span>
+    </form>
+  </body>
+  <script src="./script.js"></script>
+</html>
